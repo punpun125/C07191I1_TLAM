@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    let n;
+    // kiểm tra số nguyên tố người dùng nhập vào
+    do {
+        n = prompt(" Input number to check: ");
+        if (!isNaN(n)) {
+            break;
+        } else {
+            alert(" You need to input a number! please try again!");
+        }
+    } while (isNaN(n));
+
+    // ham kiem tra so nguyen to
+    function check_SNT(n) {
+        //Tao bien co hieu
+        let flag = true;
+        // flag = true thi n la snt, flag = false thi n ko phai snt
+        if (n < 2) {
+            flag = false;
+        } else {
+            for (let i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+
+        }
+
+        // kiem tra bien flag
+        if (flag == true) {
+            document.write(n + " is a SNT");
+        } else {
+            document.write(n + " is not a SNT");
+        }
+    }
+    check_SNT(n);
+</script>
+</body>
+</html>
