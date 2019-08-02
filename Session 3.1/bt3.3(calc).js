@@ -1,4 +1,7 @@
-function number(value){
+let Print =document.getElementById("box").value;
+
+function number(value) {
+
     if (value==="reset"){
         document.getElementById("box").value="";
     }

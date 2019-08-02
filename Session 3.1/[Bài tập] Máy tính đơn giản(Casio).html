@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    button{width: 50px;height: 50px;}
+    form{
+        position: absolute; top : 200px; left: 550px ;
+        border:2px solid black;width:220px;height: 290px;background-color: slategray;text-align: center
+    }
+</style>
+<body style="background-image: url(Digit.jpg)">
+<form>
+    <h style="font-family: 'Courier'; color: honeydew">CASIO fx5000</h><br>
+    <label for="box"></label><input id="box" style="width:208px;height: 40px;text-align: right" disabled>
+    <table border-style="solid">
+        <tr>
+            <th><button type="button" onclick="number(1)" >1</button></th>
+            <th><button type="button" onclick="number(2)" >2</button></th>
+            <th><button type="button" onclick="number(3)" >3</button></th>
+            <th><button type="button" onclick="number('+')" >+</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="number(4)" >4</button></th>
+            <th><button type="button" onclick="number(5)" >5</button></th>
+            <th><button type="button" onclick="number(6)" >6</button></th>
+            <th><button type="button" onclick="number('-')" >-</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="number(7)" >7</button></th>
+            <th><button type="button" onclick="number(8)" >8</button></th>
+            <th><button type="button" onclick="number(9)" >9</button></th>
+            <th><button type="button" onclick="number('*')" >x</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="number('reset')" >C</button></th>
+            <th><button type="button" onclick="number(0)">0</button></th>
+            <th><button type="button" onclick="summath()">=</button></th>
+            <th><button type="button" onclick="number('/')">/</button></th>
+        </tr>
+    </table>
+    <script src="bt3.3(calc).js"></script>
+</form>
+</body>
+</html>

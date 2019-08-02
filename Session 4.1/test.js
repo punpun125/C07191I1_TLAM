@@ -1,10 +1,10 @@
 function SNT() {
 
-
     let gioihan = parseInt(document.getElementById("number").value);
 
     let n = 0;
     let count = 1;
+    let flag;
     do {
         flag = true;
         if (n < 2) {
