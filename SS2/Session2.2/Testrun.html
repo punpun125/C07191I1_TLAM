@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<div style="text-align: center;">[Bài tập] Ứng dụng chuyển đổi tiền tệ</div>
+
+<table style="width:100%">
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <th><input type="number" id="X" name="Amount" oninput="givemoney()"></th>
+        <th>
+            <label>
+                <select id="A" onchange="moneyvalue()">
+                <option value="1">VND</option>
+                <option value="16000">AUD</option>
+                <option value="212">JPY</option>
+                <option value="23000">USD</option>
+            </select>
+            </label>
+        </th>
+        <th>
+            <label>
+                <select id="B" onchange="moneyvalue2()">
+                    <option value="1">VND</option>
+                    <option value="16000">AUD</option>
+                    <option value="212">JPY</option>
+                    <option value="23000">USD</option>
+                </select>
+            </label>
+        </th>
+        <th>
+            <button type="button" id="button" onclick="moneyout()" >Convert </button>
+        </th>
+    </tr>
+</table><p></p>
+
+<p id="Outputmoney"></p>
+
+<script src="2.2.1.js"></script>
+</body>
+</html>
